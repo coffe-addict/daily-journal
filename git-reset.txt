@@ -1,0 +1,17 @@
+Hello, this is notes for git reset module.
+git reset is used for moving a branch to point at a specific commit. 
+
+Git reset will move your head to pointing at the position in the branch where you like it to revert to. 
+i.e 
+	
+	If you wish to revert your working area and index to a status that you committed two commits ago.
+	reset --hard will do the work for you.
+	Two options to be used for reset :
+			--hard :- this will first move the branch to the specified commit.
+				then, it will copy from repository to working area and index.
+			--soft :- this will move the branch to the specified commit. That's it.
+
+			default is --mixed :- in moxed it will move branch to specified commit, and 
+					then, it will copy from repository to index area only, leaving 
+					working area untouched.
+
